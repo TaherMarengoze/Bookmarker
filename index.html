@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://routeacademy.github.io/Bookmarker/images/bookmark.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Bookmarker</title>
+</head>
+
+<body>
+
+    <div class="container pt-5">
+
+        <div class="main-title">
+            <h1>Bookmarker</h1>
+        </div>
+
+        <h2 class="subtitle">
+            <i class="fa fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa fa-bookmark"></i>
+        </h2>
+
+        
+        <div class="input-container">
+            <div class="mb-3">
+                <label for="siteNameInput"
+                       class="mb-2 fw-bold">
+                    <i class="fa fa-book-bookmark"></i>
+                    Site Name
+                </label>
+                <input id="siteNameInput"
+                       type="text"
+                       placeholder="Bookmark Name"
+                       class="form-control" />
+            </div>
+    
+    
+            <div class="mb-3">
+                <label for="siteUrlInput"
+                       class="mb-2 fw-bold">
+                    <i class="fa-solid fa-link"></i>
+                    Site URL
+                </label>
+                <input id="siteUrlInput"
+                       type="text"
+                       placeholder="Bookmark URL"
+                       class="form-control" />
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-primary"
+                        onclick="addBookmark()">
+                    <i class="fa fa-add"></i>
+                    Add Bookmark
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>Google</td>
+                        <td>
+                            <a href="#" class="btn btn-success" target="_blank">
+                                <span>
+                                    <i class="fa fa-eye"></i>
+                                </span>
+                                <span>Visit</span>
+                            </a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
